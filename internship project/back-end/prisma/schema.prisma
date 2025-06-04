@@ -17,5 +17,5 @@ model Quote {
   openPrice    Float
   timestamp    Int
 
-  @@unique([timestamp])
+  @@unique([symbol, timestamp])
 }
