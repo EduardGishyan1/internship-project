@@ -77,17 +77,6 @@ npm run dev
 
 Front-end UI runs at http://localhost:5173
 
-Folder Structure
-
-root/
-├── front-end/
-│ └── ...
-├── back-end/
-│ ├── prisma/
-│ └── services/ 
-├── README.md
-└── package.json
-
 📜 Scripts
 Front-End (front-end)
 Command	Description
