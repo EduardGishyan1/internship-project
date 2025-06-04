@@ -55,24 +55,24 @@ docker run --name pg-docker -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -
    
 Create a .env file inside the back-end folder with:
 
-PORT=3002
-API_KEY=my_api_key
-DATABASE_URL=postgresql://postgres:mysecretpassword@localhost:5432/mydatabase
+PORT=3002<br>
+API_KEY=my_api_key<br>
+DATABASE_URL=postgresql://postgres:mysecretpassword@localhost:5432/mydatabase<br>
 MAX_REQUESTS=60
 
 ### 3. Run Back-End (NestJS)
 
-cd back-end
-npm install
-npx prisma migrate dev --name init
+cd back-end<br>
+npm install<br>
+npx prisma migrate dev --name init<br>
 npm run start:dev
 
 Back-end API will run at http://localhost:3002
 
 ### 4. Run Front-End (React + Vite)
 
-cd front-end
-npm install
+cd front-end<br>
+npm install<br>
 npm run dev
 
 Front-end UI runs at http://localhost:5173
@@ -81,16 +81,16 @@ Front-end UI runs at http://localhost:5173
 Front-End (front-end)
 Command	Description
 
-npm install	Install dependencies
-npm run dev	Start development server
+npm install	Install dependencies<br>
+npm run dev	Start development server<br>
 npm run build	Build production bundle
 
 Back-End (back-end)
 Command	Description
 
-npm install	Install dependencies
-npm run start:dev	Start NestJS server (dev mode)
-npx prisma migrate dev	Apply database migrations
+npm install	Install dependencies<br>
+npm run start:dev	Start NestJS server (dev mode)<br>
+npx prisma migrate dev	Apply database migrations<br>
 npx prisma generate	Generate Prisma client
 
 🧱 Tech Stack
