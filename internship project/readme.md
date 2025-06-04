@@ -55,10 +55,8 @@ docker run --name pg-docker -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -
    
 Create a .env file inside the back-end folder with:
 
-env
-
 PORT=3002
-API_KEY=d0vcpphr01qmg3ulljt0d0vcpphr01qmg3ulljtg
+API_KEY=my_api_key
 DATABASE_URL=postgresql://postgres:mysecretpassword@localhost:5432/mydatabase
 MAX_REQUESTS=60
 
