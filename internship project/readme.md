@@ -80,11 +80,11 @@ Front-end UI runs at http://localhost:5173
 Folder Structure
 
 root/
-├── front-end/          # React + Vite front-end app
-│   └── ...
-├── back-end/           # NestJS back-end with Prisma & services
-│   ├── prisma/         # Prisma schema & migrations
-│   └── services/       # Finnhub API integration and price diff logic
+├── front-end/ # React + Vite front-end app
+│ └── ...
+├── back-end/ # NestJS back-end with Prisma & services
+│ ├── prisma/ # Prisma schema & migrations
+│ └── services/ # Finnhub API integration and price diff logic
 ├── README.md
 └── package.json
 
