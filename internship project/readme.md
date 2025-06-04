@@ -1,6 +1,6 @@
 # 🚀 Finnhub Stock Tracker
 
-A app fetching stock prices for 60 companies from the Finnhub API, storing data in PostgreSQL (Docker), and showing price differences.
+An app fetching stock prices for 60 companies from the Finnhub API, storing data in PostgreSQL (Docker), and showing price differences.
 
 ---
 
