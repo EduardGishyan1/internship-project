@@ -51,7 +51,7 @@ The front-end is built with React + Vite, and the back-end is a NestJS API with 
 
 docker run --name pg-docker -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d postgres
 
-2. Setup Environment Variables
+### 2. Setup Environment Variables
    
 Create a .env file inside the back-end folder with:
 
@@ -62,7 +62,7 @@ API_KEY=d0vcpphr01qmg3ulljt0d0vcpphr01qmg3ulljtg
 DATABASE_URL=postgresql://postgres:mysecretpassword@localhost:5432/mydatabase
 MAX_REQUESTS=60
 
-3. Run Back-End (NestJS)
+### 3. Run Back-End (NestJS)
 
 cd back-end
 npm install
@@ -71,7 +71,7 @@ npm run start:dev
 
 Back-end API will run at http://localhost:3002
 
-4. Run Front-End (React + Vite)
+### 4. Run Front-End (React + Vite)
 
 cd front-end
 npm install
