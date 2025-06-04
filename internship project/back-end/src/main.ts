@@ -11,7 +11,7 @@ async function bootstrap() {
   const prisma = app.get(PrismaService);
   await prisma.onModuleInit();
 
-  const port = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
+  const port = process.env.PORT ? parseInt(process.env.PORT, 10) : 3002;
 
   app.enableCors();
 
