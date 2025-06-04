@@ -22,7 +22,7 @@ const Table = () => {
       })
       .then((json) => setData(json))
       .catch((err) => {
-        console.error("Error fetching data:", err);
+        console.error("Error fetching data");
         setError("Could not load stock data.");
       });
   }, []);
