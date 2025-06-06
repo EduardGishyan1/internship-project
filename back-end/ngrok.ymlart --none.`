@@ -1,0 +1,11 @@
+authtoken: 2y2g9hd7Rg3ZTuph8uo6u66ZRf0_xKRAQkDk37Y2qryMZe6a
+
+tunnels:
+  frontend:
+    proto: http
+    addr: 5173
+
+  backend:
+    proto: http
+    addr: 8080
+

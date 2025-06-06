@@ -1,0 +1,21 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://postgres:mysecretpassword@localhost:5432/mydatabase"
+}
+
+model Quote {
+  id           Int    @id @default(autoincrement())
+  symbol       String
+  currentPrice Float
+  highPrice    Float
+  lowPrice     Float
+  openPrice    Float
+  timestamp    Int
+
+  @@unique([symbol, timestamp])
+}
