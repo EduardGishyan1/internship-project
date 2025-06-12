@@ -21,8 +21,6 @@ export class AiPredictorService {
       ? newsItems.map((item, i) => `Summary: ${item.summary}\n`).join("\n")
       : "No news available. Please generate information.";
 
-    console.log(newsText);
-
     const systemInstruction = `
     You are a helpful assistant predicting stock movement.
      Please respond with a JSON object with keys:
@@ -31,7 +29,6 @@ export class AiPredictorService {
      Do not mention the news explicitly. Only give your final conclusion.`;
 
     try {
-      console.log("AI is generating");
       const completion = await this.openai.chat.completions.create({
         model: "gpt-4.1-nano",
         messages: [
@@ -43,8 +40,6 @@ export class AiPredictorService {
 
       const tokens = this.enc.encode(newsText);
 
-      console.log(tokens)
-
       const raw = completion.choices[0]?.message?.content ?? "";
       const cleaned = raw
         .replace(/```json/g, "")
@@ -53,8 +48,7 @@ export class AiPredictorService {
 
       const data = JSON.parse(cleaned);
       return data;
-    } catch(error) {
-      console.log(error);
+    } catch {
       throw new HttpException(
         "Failed to get prediction from OpenAI",
         HttpStatus.BAD_GATEWAY,
