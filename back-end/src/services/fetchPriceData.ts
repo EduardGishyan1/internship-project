@@ -184,9 +184,6 @@ export class FetchPriceData {
       }
 
       if (validQuotes.length < MAX_REQUESTS) {
-        console.log(
-          `Collected ${validQuotes.length} quotes, waiting before next batch...`,
-        );
         await this.delay(1000);
       }
     }
